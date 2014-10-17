@@ -47,6 +47,7 @@ class AnotherTest {
     
     init() {
         myTest.aValueChanged += aReaction
+        myTest.aValueChanged += {(sender:AnyObject) in println("closure logging")}
         myTest.aValue = "wow"
     }
 }
